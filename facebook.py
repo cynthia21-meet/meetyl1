@@ -1,3 +1,6 @@
+class Post(object):
+	def __init__ (self,text):
+		self.text = text
 class User(object):
 	def __init__ (self,name,email,password):
 		self.name = name 
@@ -6,11 +9,23 @@ class User(object):
 		self.friends_list = []
 		self.posts = []
 	def add_friend(self,email):
-		print(self.name + " has added " + self.email + " as a friend ")
+		print(self.name + " has added " + email + " as a friend ")
 		self.friends_list.append(email)
 	def remove_friend(self,email):
-		print(self.name + " has removed " + self.email)
+		print(self.name + " has removed " + email)
 		self.friends_list.remove(email)
 	def post(self,text):
 		self.text=text
+		post1 = Post(text)
 		print(self.name + " has posted " + self.text )
+	def get_userInfo(self):
+		print(" name " + self.name + " email " + self.email + " password " + self.password + " friends " + str (self.friends_list) + " posts " + str (self.posts) )
+user1 = User( " ghida " , " ghida15@yahoo.com " , " 100200300ghida " )
+user2 = User( " jessica " , " jess2004@yahoo.com " , " thisismine " )
+user1.add_friend( " jess2004@yahoo.com " )
+user2.post( " Life is beautiful Be Happy !!! ")
+user1.get_userInfo()
+user2.get_userInfo()
+user1.remove_friend( " jess2004@yahoo.com " )
+
+
