@@ -24,3 +24,19 @@ class Person(object):
 	def eat(self,breakfast):
 		print(self.name + " is eating " + breakfast)
 girl = Person(" cynthia "," 15 "," Beir ouna "," girl ")
+
+class Bird(object):
+	def __init__(self,name,color,speed):
+		self.name = name 
+		self.color = color 
+		self.speed = speed
+	def getspeed(self,speed):
+		print( " The speed of " + self.name + " is " + self.speed )
+	def Race(self,winner):
+		self.winner = winner
+		print( " the winner is " + self.winner)
+	def sing(self,song):
+		self.song = song
+		print( self.name + " sing that " + self.song)
+
+		

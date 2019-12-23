@@ -9,4 +9,11 @@ def meet_y1(list1,list2):
 	print(list3)
 
 meet_y1(list1,list2)
-def addlist(list3)
+
+encoder = {'a':'d','b':'e','c':'f','d':'g','e':'h','f':'i','g':'j','h':'k','i':'l','j':'m','k':'n','l':'o','m':'p','n':'q','o':'r','p':'s','q':'t','r':'u','s':'v','t':'w','u':'x','v':'y','w':'z'}
+def encoder_caesar(string):
+	string=input()
+
+	encoder_caeser()
+
+	print(dict1["encoder"])

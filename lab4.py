@@ -12,3 +12,7 @@ class Ball(Turtle):
 		fx = food.xcor()
 
 b =Ball(5,"yellow", 4,5)
+n=5
+while n < 25 :
+	n = n*2
+	print(n)
